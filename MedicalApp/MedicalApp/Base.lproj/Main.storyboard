@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MedicalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yJM-Dq-eoe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxP-Kw-zag">
+                                <rect key="frame" x="249" y="613" width="145" height="113"/>
+                                <state key="normal" image="yesbutton"/>
+                                <connections>
+                                    <action selector="yesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ivf-2b-fXt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ore-Zs-XnW">
+                                <rect key="frame" x="-15" y="613" width="145" height="113"/>
+                                <state key="normal" image="nobutton"/>
+                                <connections>
+                                    <action selector="noButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgo-hp-o9X"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GJp-Pj-moG">
+                                <rect key="frame" x="15" y="5" width="384" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to MedicalApp, an app made to diagnose your illness. You can select your illness in a few moments." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izo-Ri-Nes">
+                                <rect key="frame" x="2" y="27" width="410" height="682"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khawaja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boJ-OW-FTc">
+                                <rect key="frame" x="188" y="716.66666666666663" width="38" height="14.333333333333371"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uzK-Tu-ANl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="sectionIndexColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell01" id="YRA-9O-Fsm">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YRA-9O-Fsm" id="q1d-m8-rgL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="izo-Ri-Nes" firstAttribute="top" secondItem="GJp-Pj-moG" secondAttribute="bottom" constant="20" id="1NF-d0-COQ"/>
+                            <constraint firstItem="GJp-Pj-moG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="1mL-Ds-Lfn"/>
+                            <constraint firstItem="izo-Ri-Nes" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="1qx-wr-bau"/>
+                            <constraint firstItem="uzK-Tu-ANl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3dc-3x-SN9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uzK-Tu-ANl" secondAttribute="bottom" id="9bc-Gu-dhU"/>
+                            <constraint firstAttribute="trailing" secondItem="yJM-Dq-eoe" secondAttribute="trailing" id="APe-9g-nBy"/>
+                            <constraint firstAttribute="bottom" secondItem="yJM-Dq-eoe" secondAttribute="bottom" id="AWL-df-onU"/>
+                            <constraint firstItem="yJM-Dq-eoe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FKg-pc-DD9"/>
+                            <constraint firstItem="GJp-Pj-moG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="GzS-p2-ZSQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uzK-Tu-ANl" secondAttribute="trailing" id="Ic0-64-ymh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="boJ-OW-FTc" secondAttribute="bottom" constant="5" id="Jo3-98-SPh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ore-Zs-XnW" secondAttribute="bottom" constant="10" id="Kpd-TM-nwB"/>
+                            <constraint firstItem="ore-Zs-XnW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-35" id="NiN-5n-oze"/>
+                            <constraint firstItem="boJ-OW-FTc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xtr-o0-6HI"/>
+                            <constraint firstItem="yJM-Dq-eoe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Z9V-hS-yZ5"/>
+                            <constraint firstItem="izo-Ri-Nes" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eZJ-bu-8Mv"/>
+                            <constraint firstItem="izo-Ri-Nes" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ets-8q-mbM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AxP-Kw-zag" secondAttribute="bottom" constant="10" id="iHW-Bk-8PT"/>
+                            <constraint firstItem="uzK-Tu-ANl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ig3-Rp-uDW"/>
+                            <constraint firstAttribute="trailing" secondItem="GJp-Pj-moG" secondAttribute="trailing" constant="15" id="ipM-Gr-OrX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AxP-Kw-zag" secondAttribute="trailing" constant="20" id="qac-By-MbE"/>
+                            <constraint firstItem="izo-Ri-Nes" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xAk-pf-hvU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Question" destination="izo-Ri-Nes" id="01r-nF-M42"/>
+                        <outlet property="noButtonInstance" destination="ore-Zs-XnW" id="PRu-Bo-1UL"/>
+                        <outlet property="progressBar" destination="GJp-Pj-moG" id="W9r-gX-F4n"/>
+                        <outlet property="tableView" destination="uzK-Tu-ANl" id="niM-NA-iQC"/>
+                        <outlet property="versionNumber" destination="boJ-OW-FTc" id="Ltf-6K-1OW"/>
+                        <outlet property="yesButtonInstance" destination="AxP-Kw-zag" id="Sx5-lB-Ojq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="136.95652173913044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nobutton" width="145" height="113"/>
+        <image name="yesbutton" width="145" height="113"/>
+    </resources>
+</document>
